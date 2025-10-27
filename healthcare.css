@@ -1,0 +1,20 @@
+#header1{
+    background-color:rgb(196, 209, 196);
+    padding: 15px;
+}
+.navigationbar{
+    background-color: rgb(255, 236, 239);
+    overflow: hidden;
+}
+.navigationbar a{
+    float:left;
+    text-align:center;
+    border: 1px solid black;
+    padding: 10px 5px;
+    text-decoration: none;
+    font-size:15px;
+    width: 22%;
+}
+.navigationbar a:hover{
+    background-color: rgb(255, 213, 220);
+}
