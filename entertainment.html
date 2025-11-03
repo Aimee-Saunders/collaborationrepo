@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Positive Contributions of Computing-made Entertainment</title>
+  <link rel="stylesheet" href="entertainment.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>How Computing-made Entertainment Has Contributed Positively to Society</h1>
+      <p style="margin:.2rem 0 .6rem 0">A very basic demonstration highlighting key benefits — education, health, culture, economy, and community.</p>
+      <button id="showExamples">Show short examples</button>
+    </header>
+
+    <section>
+      <h2>Overview</h2>
+      <p>Entertainment produced with computing (video games, interactive films, virtual reality, music software, digital art, etc.) has driven social and cultural benefits beyond leisure: it supports learning, therapy, accessibility, creative expression, economic growth, and community building.</p>
+    </section>
+
+    <section>
+      <h2>Key Positive Contributions</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Education & Learning</h3>
+          <p>Serious games and simulations teach complex subjects (science, history, languages) through active practice and immediate feedback.</p>
+        </div>
+        <div class="card">
+          <h3>Health & Therapy</h3>
+          <p>Games and VR are used in physical rehabilitation, mental-health interventions, and pain management.</p>
+        </div>
+        <div class="card">
+          <h3>Accessibility</h3>
+          <p>Assistive tech in games and media (custom controls, captions, audio descriptions) increases access for people with disabilities.</p>
+        </div>
+        <div class="card">
+          <h3>Economic & Job Creation</h3>
+          <p>Interactive entertainment supports industries, creates jobs, and fuels related fields like software, design, and hardware.</p>
+        </div>
+        <div class="card">
+          <h3>Community & Social Connection</h3>
+          <p>Multiplayer platforms and online content bring people together, support friendships, and enable cross-cultural exchange.</p>
+        </div>
+        <div class="card">
+          <h3>Preservation & Culture</h3>
+          <p>Digital archiving of games, music, and media helps preserve cultural artifacts and makes them more widely available.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Simple Interactive Demo</h2>
+      <p>Click the buttons to see short example text illustrating each benefit.</p>
+      <div style="display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.5rem">
+        <button onclick="show('education')">Education</button>
+        <button onclick="show('health')">Health</button>
+        <button onclick="show('access')">Accessibility</button>
+        <button onclick="show('community')">Community</button>
+      </div>
+      <div id="exampleBox" style="margin-top:1rem;padding:.8rem;border-radius:8px;background:#fbfdff;border:1px solid #e7f0ff;min-height:48px"></div>
+    </section>
+
+    <section>
+      <h2>Short Takeaways</h2>
+      <ul>
+        <li>Computing-made entertainment is a tool: with intentional design it amplifies learning, health, and inclusion.</li>
+        <li>It creates jobs and opens creative careers accessible to many skill levels.</li>
+        <li>Communities built around shared experiences can spark empathy and cultural understanding.</li>
+      </ul>
+    </section>
+
+    <footer>Made by Sophie with help from the internet!</footer>
+  </div>
+
+  <script>
+    const examples = {
+      education: 'A history simulation places players in historical scenarios so they can experiment and learn consequences in an engaging way.',
+      health: 'A VR rehab app gamifies exercises so patients complete more therapy reps and recover mobility faster.',
+      access: 'Customizable controls and text-to-speech let players with motor or visual impairments enjoy and participate fully.',
+      community: 'Online co-op projects and streaming connect creators and players across continents to collaborate and support one another.'
+    };
+
+    function show(k){
+      document.getElementById('exampleBox').textContent = examples[k] || '';
+    }
+
+    document.getElementById('showExamples').addEventListener('click',()=>{
+      alert('Examples available below in the "Simple Interactive Demo" section.');
+    });
+  </script>
+</body>
+</html>
